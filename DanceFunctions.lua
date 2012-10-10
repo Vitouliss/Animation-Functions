@@ -5,6 +5,7 @@ local ra = script.Parent["Right Arm"]
 local rl = script.Parent["Right Leg"]
 
 function Dance()
+	--This function is pretty cheap...Not in memory terms but outcome. 
 	for a = 1,5 do
 		h.CFrame = h.CFrame*CFrame.Angles(0,-0.2,0)
 		wait(0.1)
