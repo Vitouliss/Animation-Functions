@@ -48,6 +48,15 @@ function Dance()
 end
 
 function Jump()
+for a,b in pairs(script.Parent:GetChildren()) do
+if b.ClassName == "Humanoid" then
+b.Jump = true
+end 
+end 
+
+h.CFrame = h.CFrame*CFrame.Angles(0.2,0,0)
+wait(1)
+h.CFrame = h.CFrame*CFrame.Angles(-0.2,0,0)
 
 end
 	
